@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CUWLCTm8PtlPcWu/XXqaiMGF4lYmdU2HQy49/tMSZ8w5AV9KpzufZNCcHeST+MV47FWswxJeqJWvif/S5RXcNw==",
+  "success": true,
+  "projectFilePath": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/BBE-1.RAPI.csproj",
+  "expectedPackageFiles": [
+    "/home/storchunv/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
