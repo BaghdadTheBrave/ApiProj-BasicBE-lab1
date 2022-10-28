@@ -1,6 +1,6 @@
-namespace BBE_1.RAPI.Category
+namespace BBE_1.RAPI.Category;
 
-public record CreateCategoryRequest{
+public record CreateCategoryRequest(
     int id,
     string name
-};
+);
