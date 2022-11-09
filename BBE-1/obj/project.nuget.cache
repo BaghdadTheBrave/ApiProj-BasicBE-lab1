@@ -1,16 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uYuLxwkBgyrlR5MGb4hAWqeOCCDGd+iPSxZgk8R1ujbv5M+BzWjLWmcC/0PwEsGShXUwU2SaCQnY61ywvd+uJQ==",
+  "dgSpecHash": "Pk1bkihzWTDfQHv/oh1pIEHq7+cIoqdtve74DHdfiX2kG2rXVAt0zWGhWUqYhlKR2ukCwMlsmbO0sdbj8L86jA==",
   "success": true,
   "projectFilePath": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1/BBE-1.csproj",
   "expectedPackageFiles": [
-    "/home/storchunv/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "/home/storchunv/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
-    "/home/storchunv/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "/home/storchunv/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "/home/storchunv/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
-    "/home/storchunv/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
-    "/home/storchunv/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.9/microsoft.aspnetcore.app.ref.6.0.9.nupkg.sha512"
+    "/home/storchunv/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.10/microsoft.aspnetcore.app.ref.6.0.10.nupkg.sha512"
   ],
   "logs": []
 }

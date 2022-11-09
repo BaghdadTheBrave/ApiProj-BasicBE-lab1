@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BBE-1/1.0.0": {
+        "dependencies": {
+          "BBE-1.RAPI": "1.0.0"
+        },
+        "runtime": {
+          "BBE-1.dll": {}
+        }
+      },
+      "BBE-1.RAPI/1.0.0": {
+        "runtime": {
+          "BBE-1.RAPI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BBE-1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BBE-1.RAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,7 @@
+POST http://localhost:5163/Category
+Content-Type: application/json
+
+{
+    "id":12,
+    "name":"Abooba"
+}

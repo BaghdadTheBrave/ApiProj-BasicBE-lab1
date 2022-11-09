@@ -1,0 +1,12 @@
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/bin/Debug/net6.0/BBE-1.RAPI.deps.json
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/bin/Debug/net6.0/BBE-1.RAPI.dll
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/bin/Debug/net6.0/ref/BBE-1.RAPI.dll
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/bin/Debug/net6.0/BBE-1.RAPI.pdb
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/BBE-1.RAPI.csproj.AssemblyReference.cache
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/BBE-1.RAPI.GeneratedMSBuildEditorConfig.editorconfig
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/BBE-1.RAPI.AssemblyInfoInputs.cache
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/BBE-1.RAPI.AssemblyInfo.cs
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/BBE-1.RAPI.csproj.CoreCompileInputs.cache
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/BBE-1.RAPI.dll
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/ref/BBE-1.RAPI.dll
+/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/obj/Debug/net6.0/BBE-1.RAPI.pdb
