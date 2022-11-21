@@ -4,7 +4,6 @@ using BBE_1.RAPI.Record;
 using BBE_1.Data;
 using Microsoft.AspNetCore.Mvc;
 using BBE_1.Services.Data;
-using BBE_1.Services.Data;
 namespace BBE_1.Controllers;
 
 [ApiController]
@@ -13,22 +12,20 @@ public class BBE_1Controller : ControllerBase{
     private readonly IRecordService _recordService;
     private readonly ICategoryService _categoryService;
 
-    public BBE_1Controller(IUserService service){
-        _userService = service;
+    [ActivatorUtilitiesConstructor]
+    public BBE_1Controller(IUserService userService, IRecordService recordService, ICategoryService categoryService){
+        _userService = userService;
+        _recordService = recordService;
+        _categoryService = categoryService;
     }
-    public BBE_1Controller(IRecordService service){
-        _recordService = service;
-    }
-    public BBE_1Controller(ICategoryService service){
-        _categoryService = service;
-    }
+    
 
 
-    [HttpPost("/user")]
+    [HttpPost("/User")]
     public IActionResult CreateUser(CreateUserRequest request){
         var user = new User(request.id,request.name);
         _userService.CreateUser(user);
-        return Ok(User);
+        return Ok(user);
     }
     [HttpPost("/Category")]
     public IActionResult CreateCategory(CreateCategoryRequest request){
@@ -38,23 +35,47 @@ public class BBE_1Controller : ControllerBase{
     }
     [HttpPost("/Record")]
     public IActionResult CreateRecord(CreateRecordRequest request){
-        var Record = new Record(request.id, request.idUser,request.idCategory,request.DateTimeOfRecord,request.spent);
+        var Record = new Record(request.id, request.idUser,request.idCategory,request.spent);
         _recordService.CreateRecord(Record);
-        return Ok();
+        return Ok(Record);
     }
 
+
+
+    private static GetCategoriesResponse MapCategories(List <Category> categoriesList){
+        var response = new GetCategoriesResponse(new List<GetCategoryResponse>());
+
+        foreach(var category in categoriesList){
+            response.categories.Add(new GetCategoryResponse(category.id,category.name));
+        }
+        return response;
+    }
     
     [HttpGet("/Category")]
     public IActionResult GetCategories(){
         
-        return Ok(_categoryService.GetCategories());
+        return Ok(MapCategories(_categoryService.GetCategories()));
+    }
+
+
+
+    
+    private static GetRecordsResponse MapRecords(List <Record> recordsList)
+    {
+        var response = new GetRecordsResponse(new List<GetRecordResponse>());
+
+        foreach(var record in recordsList){
+            response.records.Add(new GetRecordResponse(record.id,record.idUser,record.idCategory,
+                record.DateTimeOfRecord,record.spent));
+        }
+        return response;
     }
     [HttpGet("/Record/{idUser:int}")]
     public IActionResult GetRecordsByUserId(int idUser){
-        return Ok(_recordService.GetRecordsByUserId(idUser));
+        return Ok(MapRecords(_recordService.GetRecordsByUserId(idUser)) );
     }
     [HttpGet("/Record/{idUser:int}/{idCategory:int}")]
     public IActionResult GetRecordsByUserIdAndByCategoryId(int idUser, int idCategory){
-        return Ok(_recordService.GetRecordsByUserAndCategory(idUser,idCategory));
+        return Ok(MapRecords(_recordService.GetRecordsByUserAndCategory(idUser,idCategory)) );
     }
 }

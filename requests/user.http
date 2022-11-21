@@ -1,7 +1,7 @@
-POST http://localhost:5163/user
+POST http://localhost:5163/User
 Content-Type: application/json
 
 {
-    "id":12,
-    "name":"Aboba"
+    "id":11,
+    "name":"vovus"
 }

@@ -1,0 +1,9 @@
+POST http://localhost:5163/Record
+Content-Type: application/json
+
+{
+    "id":11,
+    "idUser":11,
+    "idCategory":11,
+    "spent":123
+}

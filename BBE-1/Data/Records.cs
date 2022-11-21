@@ -7,11 +7,11 @@ public class Record{
     public DateTime DateTimeOfRecord{get;}
     public int spent{get;}
 
-    public Record(int id, int idUser, int idCategory, DateTime dateTimeOfRecord, int spent){
+    public Record(int id, int idUser, int idCategory, int spent){
         this.id=id;
         this.idUser=idUser;
         this.idCategory = idCategory;
-        this.DateTimeOfRecord = dateTimeOfRecord;
+        this.DateTimeOfRecord = DateTime.Now;
         this.spent = spent;
     }
 }

@@ -1,0 +1,3 @@
+@idUser=11
+
+GET http://localhost:5163/Record/{{idUser}}

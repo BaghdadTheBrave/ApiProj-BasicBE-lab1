@@ -24,7 +24,7 @@ public class RecordService : IRecordService{
         List<Record>response = new();
         foreach(var record in _records)
         {
-            if(record.idUser==userId)
+            if(record.idUser==userId && record.idCategory==categoryId)
             {
                 response.Add(record);
             }
