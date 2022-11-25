@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Pk1bkihzWTDfQHv/oh1pIEHq7+cIoqdtve74DHdfiX2kG2rXVAt0zWGhWUqYhlKR2ukCwMlsmbO0sdbj8L86jA==",
+  "dgSpecHash": "dfHOruTDrXrJJwHaKpltLZeJ9JCW9Vijmvz/KXCsnc1b3U2X5a2qoLef2pHIlPW7cIYwJk8It8cGwlQqGn3kHg==",
   "success": true,
   "projectFilePath": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1/BBE-1.csproj",
   "expectedPackageFiles": [
-    "/home/storchunv/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.10/microsoft.aspnetcore.app.ref.6.0.10.nupkg.sha512"
+    "/home/storchunv/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "/home/storchunv/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "/home/storchunv/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.11/microsoft.netcore.app.host.linux-x64.6.0.11.nupkg.sha512"
   ],
   "logs": []
 }
