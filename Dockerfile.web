@@ -4,7 +4,7 @@ WORKDIR /source
 
 
 COPY . .
-RUN dotnet restore "./BBE-1/BBE1.csproj"
+RUN dotnet restore "./BBE-1/BBE-1.csproj"
 RUN dotnet publish -c Release -o /app --no-restore
 #serve stage
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
