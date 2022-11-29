@@ -1,15 +1,17 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
-WORKDIR /App
+#build stage
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /source
 
 
 COPY . .
-RUN dotnet restore
-RUN dotnet publish -c Release -o out
+RUN dotnet restore "./BBE-1/BBE1.csproj"
+RUN dotnet publish -c Release -o /app --no-restore
+#serve stage
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
+WORKDIR /app
+COPY --from=build /app ./
 
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
-WORKDIR /App
-COPY --from=build-env /App/out .
-COPY ./ports.conf /etc/apache2/ports.conf
-COPY ./apache.conf /etc/apache2/sites-enabled/000-default.conf
+#COPY ./ports.conf /etc/apache2/ports.conf
+#COPY ./apache.conf /etc/apache2/sites-enabled/000-default.conf
 ENV ASPNETCORE_URLS http://*:$PORT
 ENTRYPOINT [ "dotnet","BBE-1.dll" ]
