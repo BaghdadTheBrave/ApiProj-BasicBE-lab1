@@ -11,5 +11,5 @@ WORKDIR /App
 COPY --from=build-env /App/out .
 COPY ./ports.conf /etc/apache2/ports.conf
 COPY ./apache.conf /etc/apache2/sites-enabled/000-default.conf
+ENV ASPNETCORE_URLS http://*:$PORT
 ENTRYPOINT [ "dotnet","BBE-1.dll" ]
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet BBE-1.dll
