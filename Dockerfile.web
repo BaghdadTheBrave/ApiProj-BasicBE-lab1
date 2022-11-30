@@ -11,7 +11,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
 WORKDIR /app
 COPY --from=build /app ./
 
-COPY ./ports.conf /etc/apache2/ports.conf
-COPY ./apache.conf /etc/apache2/sites-enabled/000-default.conf
+#COPY ./ports.conf /etc/apache2/ports.conf
+#COPY ./apache.conf /etc/apache2/sites-enabled/000-default.conf
 #ENV ASPNETCORE_URLS http://*:$PORT
-ENTRYPOINT [ "dotnet","BBE-1.dll" ]
+CMD [ "dotnet","BBE-1.dll" ]
