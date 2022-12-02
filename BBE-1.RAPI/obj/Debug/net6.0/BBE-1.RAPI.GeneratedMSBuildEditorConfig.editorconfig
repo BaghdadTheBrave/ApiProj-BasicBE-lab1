@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BBE_1.RAPI
-build_property.ProjectDir = /home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/
+build_property.ProjectDir = /home/storchunv/ApiProj-BasicBE-lab1/BBE-1.RAPI/
