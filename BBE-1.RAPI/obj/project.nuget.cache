@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IlwolXf1W8pfzd0zsm6S0BvCF3OqOebuYRmhFnDENV3vHL2SI2tCWbi/yC/C5fs3xz72bYr1dfB3HqKdxYzfGg==",
+  "dgSpecHash": "EHkvQhxl4+7i8SdW8ownTqDG4w6W7ENEvT33aXa/pWCG3MoUVO2r/jRxp32AwKTjSqt/KmybKNQ5bNJsSXwUFA==",
   "success": true,
-  "projectFilePath": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/BBE-1.RAPI.csproj",
-  "expectedPackageFiles": [
-    "/home/storchunv/.nuget/packages/microsoft.netcore.app.ref/6.0.11/microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
-    "/home/storchunv/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.11/microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/storchunv/ApiProj-BasicBE-lab1/BBE-1.RAPI/BBE-1.RAPI.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

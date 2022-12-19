@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1/BBE-1.csproj",
+      "projectUniqueName": "/home/storchunv/ApiProj-BasicBE-lab1/BBE-1/BBE-1.csproj",
       "projectName": "BBE-1",
-      "projectPath": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1/BBE-1.csproj",
+      "projectPath": "/home/storchunv/ApiProj-BasicBE-lab1/BBE-1/BBE-1.csproj",
       "packagesPath": "/home/storchunv/.nuget/packages/",
-      "outputPath": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1/obj/",
+      "outputPath": "/home/storchunv/ApiProj-BasicBE-lab1/BBE-1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/storchunv/.nuget/NuGet/NuGet.Config"
@@ -51,8 +51,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/BBE-1.RAPI.csproj": {
-              "projectPath": "/home/storchunv/Documents/labs/cs/BBE/l1/BBE-1.RAPI/BBE-1.RAPI.csproj"
+            "/home/storchunv/ApiProj-BasicBE-lab1/BBE-1.RAPI/BBE-1.RAPI.csproj": {
+              "projectPath": "/home/storchunv/ApiProj-BasicBE-lab1/BBE-1.RAPI/BBE-1.RAPI.csproj"
             }
           }
         }
@@ -77,20 +77,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[6.0.11, 6.0.11]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.11, 6.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
