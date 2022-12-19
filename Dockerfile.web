@@ -1,26 +1,14 @@
-
+#build stage
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /source
 
-#copy n' restore csproj
-COPY BBE-1/*.csproj ./BBE-1/
-COPY BBE-1.RAPI/*.csproj ./BBE-1.RAPI/
-COPY l1.sln .
-RUN dotnet restore "./l1.sln"
 
-#copy everything else
-COPY BBE-1/. .
-COPY BBE-1.RAPI/. .
 COPY . .
-WORKDIR "/source/BBE-1/"
-RUN dotnet publish -c Release -o /out --no-restore
-
-
-
-
+RUN dotnet restore "./BBE-1/BBE-1.csproj"
+RUN dotnet publish -c Release -o /app --no-restore
 #serve stage
-FROM mcr.microsoft.com/dotnet/aspnet:6.0
-WORKDIR /out
-COPY --from=build /out ./
+FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal
+WORKDIR /app
+COPY --from=build /app ./
 
 CMD ASPNETCORE_URLS=http://*:$PORT BBE-1.dll
